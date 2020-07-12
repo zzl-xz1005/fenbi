@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+全局引入axios
+把仓库分模块
+把路由写好
+请求后端数据库的网址要外部引入

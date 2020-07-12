@@ -31,3 +31,8 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+配置跨域
+配置数据库连接
+配置post请求
+配置允许上传文件
+配置允许本地缓存
