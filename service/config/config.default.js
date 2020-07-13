@@ -29,7 +29,7 @@ module.exports = appInfo => {
   }
   //配置允许跨域和携带缓存
   config.cors={
-	  origin:"http://192.168.3.112:8080",
+	  origin:"http://192.168.3.112",
 	  credentials: true//后端会给去前端返回缓存数据包  告诉浏览器  去做缓存
   }
    //post安全设置 
