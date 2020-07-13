@@ -3,7 +3,7 @@
 // }
 export default{
 	//TopNav的网址
-	//如 login:192.168.3.112:8080
+	login:"http://192.168.3.116:8080"
 	//使用：this.$routes.login
 	
 	//FootNav的网址
