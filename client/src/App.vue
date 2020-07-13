@@ -1,7 +1,8 @@
 <template>
   <div >
 		<TopNav></TopNav>
-  </div>
+
+  
 </template>
 
 <script>

@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 	<div id="course">
 		<!-- 版心 -->
 		<div class="course-content">
@@ -20,10 +21,17 @@
 			</div>
 		</div>
 	</div>
+=======
+<div class="box">
+    <Course-Nav></Course-Nav>
+    <router-view></router-view>
+</div>
+>>>>>>> 6b3e7ffb577ab62a9c22efd8f0ba4605b19977d5
 </template>
 
 
 <script>
+<<<<<<< HEAD
 	export default {
 		data() {
 			return {
@@ -115,4 +123,29 @@
 		background-color: #b3b3b3;
 	}
 	
+=======
+import CourseNav from '@/components/CourseNav'
+export default{
+    data() {
+        return {
+            
+        }
+    },
+    methods: {
+        
+    },
+   mounted() {
+       console.log(this.$store.state.Course.items)
+   },
+    components:{CourseNav}
+}
+</script>
+
+<style>
+.box{
+    width: 1200px;
+    margin: 20px auto;
+
+}
+>>>>>>> 6b3e7ffb577ab62a9c22efd8f0ba4605b19977d5
 </style>
