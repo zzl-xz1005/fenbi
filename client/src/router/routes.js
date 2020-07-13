@@ -3,7 +3,7 @@
 // }
 export default{
 	//TopNav的网址
-	login:"http://192.168.3.116:8080"
+	login:"http://localhost:8080",
 	//使用：this.$routes.login
 	
 	//FootNav的网址
@@ -17,4 +17,6 @@ export default{
 	//Questions的网址
 	
 	//Teachers的网址
+	teachers:"http://localhost:7001/teachers"
+	//this.$routes.teachers
 }
