@@ -1,13 +1,12 @@
 <template>
 	<div>
-		主页内部
-		主页内部
+		
 	</div>
 </template>
 
 <script>
 	export default{
-		
+		name:"Home"
 	}
 </script>
 

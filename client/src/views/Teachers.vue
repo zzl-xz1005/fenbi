@@ -8,6 +8,7 @@
 
 <script>
 	export default {
+		name:"Teachers",
 		data(){return {
 			allteachersarr:[]
 		}},

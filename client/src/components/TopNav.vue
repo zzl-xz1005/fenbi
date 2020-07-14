@@ -6,37 +6,45 @@
 			</div>
 			<div class="nav">
 				<el-tabs class="el-tabs" v-model="activeName" @tab-click="handleClick">
-					<el-tab-pane style="font-size: 24px;" label="首页" name="first"></el-tab-pane>
+					<!-- <el-tab-pane label="首页" name="first"></el-tab-pane>
 					<el-tab-pane label="课程" name="second"></el-tab-pane>
 					<el-tab-pane label="题库" name="third"></el-tab-pane>
 					<el-tab-pane label="师资" name="fourth"></el-tab-pane>
-					<el-tab-pane label="下载" name="five"></el-tab-pane>
+					<el-tab-pane label="下载" name="five"></el-tab-pane> -->
+					<router-link to="/">首页</router-link>
+					<router-link to="/Course">课程</router-link>
+					<router-link to="/Questions">题库</router-link>
+					<router-link to="/Teachers">师资</router-link>
+					<router-link to="/Download">下载</router-link>
 				</el-tabs>
 			</div>
+			<component :is="name"></component>
 			<div class="login" @click="centerDialogVisible = true">登录</div>
-			<el-dialog
-			  :visible.sync="centerDialogVisible"
-			  width="30%"
-			  center>
-			  <span class="login_text">登录</span>
-			  <span>需要注意的是内容是默认不居中的</span>
-			  <span slot="footer" class="dialog-footer">
-			    <el-button type="primary" @click="centerDialogVisible = false">登录</el-button>
-			  </span>
+			<el-dialog :visible.sync="centerDialogVisible" width="30%" center>
+				<span class="login_text">登录</span>
+				<span>需要注意的是内容是默认不居中的</span>
+				<span slot="footer" class="dialog-footer">
+					<el-button type="primary" @click="centerDialogVisible = false">登录</el-button>
+				</span>
 			</el-dialog>
-			
+
 			<div class="regis">注册</div>
 
 		</div>
+		<router-view></router-view>
 	</div>
 </template>
 
 <script>
+	import Teachers from "../views/Teachers.vue"
 	export default {
+		components: {
+			Teachers
+		},
 		data() {
-			
+
 			return {
-				
+				name:"",
 				activeName: 'first',
 				visible: false,
 				centerDialogVisible: false
@@ -45,19 +53,18 @@
 		methods: {
 			
 			handleClick(tab, event) {
-				console.log(tab, event);
+				// console.log(tab, event);
 			}
 		}
 	};
 </script>
 
 <style>
+	.login_text {
+		color: red;
+		font-size: 18px;
 
-.login_text{
-	color: red;
-	font-size: 18px;
-	
-}
+	}
 
 	.login {
 		position: absolute;
