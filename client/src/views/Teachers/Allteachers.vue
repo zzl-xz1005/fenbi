@@ -1,6 +1,7 @@
 <template>
 	<div class="allteachersObjBox">
-			<div class="AllteachersObj">
+		
+			<div class="AllteachersObj" @click="teachersdetails(AllteachersObj.id)">
 				<div><img :src="AllteachersObj.teachers_img" alt=""></div>
 				
 				<div class="teacherinfo">
@@ -19,11 +20,14 @@
 <script>
 	export default {
 		props: ["AllteachersObj"],
-		methods: {
-			// todeatail() {
-			// 	// this.$router.push(this.goodsObj.id)
-			// }
-		},
+		methods:{
+			teachersdetails(ev){
+				// console.log("点击详情")
+				// console.log(ev)
+				this.$router.push({path:"/Teachersdetails",query:{id:ev}})
+			}
+		}
+		
 		
 	}
 </script>
@@ -43,13 +47,15 @@
 		border-radius: 8px;
 		cursor: pointer;
 		margin-bottom: 20px;	
-		/* padding-left: 0px; */
-		 /* display: flex; */
 		
+	}
+	.AllteachersObj:hover{
+		margin-top: -10px;
+		transition: 0.2s;
 	}
 	.AllteachersObj img{
 		border-radius: 8px 8px 0px 0px;
-		width: 280px;
+		width: 100%;
 		height: 280px;
 	}
 	

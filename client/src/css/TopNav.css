@@ -1,0 +1,160 @@
+	.kongbai1{
+		width: 100px;
+		height: 20px;
+		background-color: white;
+	}
+	.kongbai2{
+		width: 100px;
+		height: 50px;
+		background-color: white;
+	}
+	.login_kuang {
+		position: relative;
+		
+	}
+
+	.login_text {
+		color: #628AFC;
+		font-size: 24px;
+		margin-top: -22px;
+		margin-left: 180px;
+		display: inline-block;
+
+	}
+
+
+	.nav_line1 {
+		display: inline-block;
+		width: 32px;
+		height: 1px;
+		border: 2px solid #3C7CFC;
+		position: absolute;
+		margin-top: 28px;
+		margin-left: -37px;
+	}
+
+	.nav_line2 {
+		display: inline-block;
+		width: 32px;
+		height: 1px;
+		border: 2px solid #3C7CFC;
+		position: absolute;
+		margin-top: 28px;
+		margin-left: -37px;
+	}
+
+	.nav_line3 {
+		display: inline-block;
+		width: 32px;
+		height: 1px;
+		border: 2px solid #3C7CFC;
+		position: absolute;
+		margin-top: 28px;
+		margin-left: -37px;
+		/* display: none; */
+	}
+
+	.nav_line4 {
+		display: inline-block;
+		width: 32px;
+		height: 1px;
+		border: 2px solid #3C7CFC;
+		position: absolute;
+		margin-top: 28px;
+		margin-left: -37px;
+		/* display: none; */
+	}
+
+	.nav_line5 {
+		display: inline-block;
+		width: 32px;
+		height: 1px;
+		border: 2px solid #3C7CFC;
+		position: absolute;
+		margin-top: 28px;
+		margin-left: -37px;
+		/* display: none; */
+	}
+
+	.top_nav_text {
+		display: inline-block;
+		text-decoration: none;
+		font-size: 18px;
+		margin-left: 30px;
+		color: #CCCCCC;
+	}
+
+	.top_nav_text:hover {
+		color: #3C7CFC;
+	}
+
+
+	.login {
+		position: absolute;
+		margin-top: 13px;
+		margin-left: 1247px;
+		color: #628AFC;
+	}
+
+	.login:hover {
+		cursor: pointer;
+	}
+
+	.regis {
+		position: absolute;
+		margin-top: 13px;
+		margin-left: 1300px;
+		color: #628AFC;
+	}
+
+	.regis:hover {
+		cursor: pointer;
+	}
+
+	font {
+		font-size: 18px;
+	}
+
+	.el-tabs__active-bar.is-top {
+		height: 3px;
+	}
+
+	.blog {
+		position: relative;
+		width: 100%;
+		height: 50px;
+		box-shadow: 2px 2px 3px 3px #ccc;
+		border-bottom: 1px solid gainsboro;
+	}
+
+	.nav {
+		position: absolute;
+		display: inline-block;
+		width: 600px;
+		height: 40px;
+		margin-top: 0px;
+		margin-left: 330px;
+		padding-top: 10px;
+	}
+
+	.el-tabs {
+		width: 60%;
+		margin-left: 0px;
+		display: inline-block;
+		font-weight: 800;
+	}
+
+	.logo {
+		position: absolute;
+		display: inline-block;
+		width: 104px;
+		height: 40px;
+		margin-top: 0px;
+		margin-left: 150px;
+	}
+
+	img {
+		display: inline-block;
+		width: 104px;
+		height: 40px;
+	}

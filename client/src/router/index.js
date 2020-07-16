@@ -9,10 +9,24 @@ const routes = [{
 	component: () => import('../views/Home.vue')
 },
 {
-	path: '/Download',
-	name: 'Download',
-	component: () => import('../views/Download.vue')
-},
+		path: '/Download',
+		name: 'Download',
+		component: () => import('../views/Download.vue'),
+		//重定向
+		redirect:"/Download/fenbi",
+		// 下载页面的子路由
+		children:[{
+			path: 'pc',
+			name: 'pc',
+			component: () => import('../views/Download/Pc.vue')
+		},
+		{
+			path: 'fenbi',
+			name: 'fenbi',
+			component: () => import('../views/Download/Fenbi.vue')
+		}
+		]
+	},
 {
 	path: '/Course',
 	name: 'Course',
@@ -21,66 +35,66 @@ const routes = [{
 	children: [{
 		path: 'CourseNav0',
 		name: 'CourseNav0',
-		component: () => import('@/views/course/CourseBox0.vue')
+		component: () => import('@/views/Course/CourseBox0.vue')
 	},
 	{
 		path: 'CourseNav1',
 		name: 'CourseNav1',
-		component: () => import('@/views/course/CourseBox1.vue')
+		component: () => import('@/views/Course/CourseBox1.vue')
 	},
 	{
 		path: 'CourseNav2',
 		name: 'CourseNav2',
-		component: () => import('@/views/course/CourseBox2.vue')
+		component: () => import('@/views/Course/CourseBox2.vue')
 	},
 	{
 		path: 'CourseNav3',
 		name: 'CourseNav3',
-		component: () => import('@/views/course/CourseBox3.vue')
+		component: () => import('@/views/Course/CourseBox3.vue')
 	},
 	{
 		path: 'CourseNav4',
 		name: 'CourseNav4',
-		component: () => import('@/views/course/CourseBox4.vue')
+		component: () => import('@/views/Course/CourseBox4.vue')
 	},
 	{
 		path: 'CourseNav5',
 		name: 'CourseNav5',
-		component: () => import('@/views/course/CourseBox5.vue')
+		component: () => import('@/views/Course/CourseBox5.vue')
 	},
 	{
 		path: 'CourseNav6',
 		name: 'CourseNav6',
-		component: () => import('@/views/course/CourseBox6.vue')
+		component: () => import('@/views/Course/CourseBox6.vue')
 	},
 	{
 		path: 'CourseNav7',
 		name: 'CourseNav7',
-		component: () => import('@/views/course/CourseBox7.vue')
+		component: () => import('@/views/Course/CourseBox7.vue')
 	}, {
 		path: 'CourseNav8',
 		name: 'CourseNav8',
-		component: () => import('@/views/course/CourseBox8.vue')
+		component: () => import('@/views/Course/CourseBox8.vue')
 	},
 	{
 		path: 'CourseNav9',
 		name: 'CourseNav9',
-		component: () => import('@/views/course/CourseBox9.vue')
+		component: () => import('@/views/Course/CourseBox9.vue')
 	},
 	{
 		path: 'CourseNav10',
 		name: 'CourseNav10',
-		component: () => import('@/views/course/CourseBox10.vue')
+		component: () => import('@/views/Course/CourseBox10.vue')
 	},
 	{
 		path: 'CourseNav11',
 		name: 'CourseNav11',
-		component: () => import('@/views/course/CourseBox11.vue')
+		component: () => import('@/views/Course/CourseBox11.vue')
 	},
 	{
 		path: 'CourseNav12',
 		name: 'CourseNav12',
-		component: () => import('@/views/course/CourseBox12.vue')
+		component: () => import('@/views/Course/CourseBox12.vue')
 	}
 ]
 },
@@ -93,6 +107,11 @@ const routes = [{
 	path: '/Teachers',
 	name: 'Teachers',
 	component: () => import('../views/Teachers.vue')
+},
+{
+		path: '/Teachersdetails',
+		name: 'Teachersdetails',
+		component: () => import('../views/Teachers/Teachersdetails.vue')
 }
 ]
 

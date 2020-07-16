@@ -1,19 +1,24 @@
 <template>
-<<<<<<< HEAD
   <div >
-		<router-link to="/">Home</router-link>
-		<router-link to="/Teachers">师资</router-link>
-=======
-  <div class="box">
-		<router-link to="/">Home</router-link>
-    <router-link to="/Course">课程</router-link> 
->>>>>>> 94c13a597c52950a57c516a5a2c34f3ff34e8db3
-		<router-view></router-view>
-  </div>
+		<TopNav></TopNav>
+		<!-- <Teachers></Teachers> -->
+		<FootNav></FootNav>
+		<!-- <router-view></router-view> -->
+	</div>
 </template>
 
 <script>
-
+	import TopNav from "./components/TopNav.vue"
+	import FootNav from "./components/FootNav.vue"
+	import Teachers from "./views/Teachers.vue"
+	
+	export default{
+		components:{
+			TopNav,
+			FootNav,
+			Teachers
+		}
+	}
 </script>
 <style>
 

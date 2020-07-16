@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <router-link to="CourseNav0">{{this.$store.state.Course.items[0]}}</router-link>
+   <router-link to="CourseNav0">{{this.$store.state.Course.items[0]}}</router-link>
     <router-link to="CourseNav1">{{this.$store.state.Course.items[1]}}</router-link>
     <router-link to="CourseNav2">{{this.$store.state.Course.items[2]}}</router-link>
     <router-link to="CourseNav3">{{this.$store.state.Course.items[3]}}</router-link>
