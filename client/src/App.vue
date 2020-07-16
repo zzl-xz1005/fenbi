@@ -1,9 +1,8 @@
 <template>
   <div >
 		<TopNav></TopNav>
-		<!-- <Teachers></Teachers> -->
 		<FootNav></FootNav>
-		<!-- <router-view></router-view> -->
+
 	</div>
 </template>
 

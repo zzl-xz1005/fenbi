@@ -1,5 +1,6 @@
 <template>
 	<div>
+
 		<div class="home_items">
 			<div class="home_items_lunbo">
 				<!-- <span class="demonstration">Click 指示器触发</span> -->
@@ -58,10 +59,12 @@
 		<Qiyebaodao></Qiyebaodao>
 		<!-- 荣誉 -->
 		<Rongyu></Rongyu>
+
 	</div>
 </template>
 
 <script>
+
 	
 		export default {
 			name:"Home",
@@ -84,6 +87,7 @@
 			
 		}
 	
+
 </script>
 
 <style>

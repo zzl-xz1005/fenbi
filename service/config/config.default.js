@@ -31,6 +31,10 @@ module.exports = appInfo => {
   config.cors={
     origin:"http://localhost:8080",
     // origin:"*",
+    // origin:"http://192.168.3.112:8080",
+    // origin:"http://localhost:8080",
+    // origin:"*",
+	 // origin:"http://192.168.31.108:8080",
 	  credentials: true//后端会给去前端返回缓存数据包  告诉浏览器  去做缓存
   }
    //post安全设置 

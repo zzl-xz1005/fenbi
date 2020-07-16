@@ -1,4 +1,5 @@
 <template>
+
 	<div id="download">
 		<div class="down-top">
 			<div class="down-header">
@@ -21,7 +22,9 @@
 		}
 		// component: () => import('../views/Download/Fenbi.vue'),
 		// component: () => import('../views/Download/Pc.vue')
-	}
+}
+
+
 </script>
 
 <style>
