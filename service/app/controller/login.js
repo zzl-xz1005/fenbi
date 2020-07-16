@@ -22,7 +22,6 @@ class UserloginController extends Controller {
   			ctx.body={code:4003,info:"密码或用户名错误"}
   		}else{
   			this.ctx.session.user_name=obj.user_name
-			console.log(this.ctx.session.user_name,11111111111)
   			ctx.body={code:2001,info:"登录成功",user_img:res[0].user_img,name:res[0].user_name}
   		}
   	}

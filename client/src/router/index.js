@@ -14,6 +14,16 @@ const routes = [{
 	component: () => import('../views/Download.vue')
 },
 {
+	path: '/Address',
+	name: 'Address',
+	component: () => import('../views/Address.vue')
+},
+{
+	path: '/MyOrder',
+	name: 'MyOrder',
+	component: () => import('../views/MyOrder.vue')
+},
+{
 	path: '/Course',
 	name: 'Course',
 	redirect: '/Course/CourseNav0',
